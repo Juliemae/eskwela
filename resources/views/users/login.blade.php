@@ -7,8 +7,8 @@
 
 		<div class="container">
 		  <section id="content">
-		    <form action="">
-		    <h1> Register Form</h1>
+		    <form action="{{url('users/')}}" method="POST">
+		      <h1>Login Form</h1>
 		      <div>
 		        <input type="text" placeholder="School ID" required="" id="school_id" />
 		      </div>
@@ -16,10 +16,14 @@
 		        <input type="password" placeholder="Password" required="" id="password" />
 		      </div>
 		      <div>
-		        <input type="submit" value="Sign Up" />
-		        <input type="submit" value="Cancel" />
+		        <input type="submit" value="Log in" />
+		        <a href="#">Lost your pas	 sword?</a>
+		        <a href="/users/create">Register</a>
 		      </div>
 		    </form><!-- form -->
+		    <div class="button">
+		      <a href="#">have a nice day :) !!! </a>
+		    </div><!-- button -->
 		  </section><!-- content -->
 		</div><!-- container -->
 

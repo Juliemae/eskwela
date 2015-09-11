@@ -16,27 +16,6 @@ Route::get('register', [ 'as' => 'register', 'uses' => 'RegisterController@index
 Route::get('login', [ 'as' => 'login', 'uses' => 'LoginController@index' ]);
 Route::get('/', [ 'as' => 'home', 'uses' => 'HomeController@index' ]);
 
-Route::group(['prefix' => 'subject'], function () {
-
-	Route::get('english', [ 'as' => 'subject.english', 'uses' => 'EnglishController@index' ]);
-	Route::get('math', [ 'as' => 'subject.math', 'uses' => 'MathController@index' ]);
-	Route::get('computer', [ 'as' => 'subject.computer', 'uses' => 'ComputerController@index' ]);
-
-
-});
-// Route::get('subject/english', [ 'as' => 'subject.english', 'uses' => 'EnglishController@index' ]);
-// Route::get('subject/math', 'MathController@index');
-// Route::get('subject/computer', 'ComputerController@index');
-Route::get('aboutus', [ 'as' => 'aboutus', 'uses' => 'AboutusController@index' ]);
-Route::get('userprofile', [ 'as' => 'userprofile', 'uses' => 'UserprofileController@index' ]);
-Route::get('calendar', [ 'as' => 'calendar', 'uses' => 'CalendarController@index' ]);
-// Route::get('home', 'HomeController@index');
-
-//  Route::controllers([
-// 	'auth' => 'Auth\AuthController',
-// 	'password' => 'Auth\PasswordController',
-// ]);
-
 // Route::get('register','UserController@register');
 
 // Route::post('register', 'UserController@storeRegister');
@@ -49,5 +28,3 @@ Route::get('calendar', [ 'as' => 'calendar', 'uses' => 'CalendarController@index
 // Route::resource('computer','ComputerController');
 // Route::resource('aboutus','AboutusController');
 // Route::resource('userprofile','UserprofileController');
-
-

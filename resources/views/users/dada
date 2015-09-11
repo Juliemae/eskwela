@@ -1,0 +1,16 @@
+{!! Form::open() !!}
+	   			<div class="form-group">
+							<label class="col-md-4 control-label"><b>School ID:</b></label>
+							<div class="col-md-6">
+								<input type="text" class="form-control" name="school_id">
+							</div>
+				</div>
+
+
+				<div class="form-group">
+							<label class="col-md-4 control-label"><b>Password: </b></label>
+							<div class="col-md-6">
+								<input type="password" class="form-control" name="password">
+							</div>
+				</div>
+	   {!! Form::close() !!}
